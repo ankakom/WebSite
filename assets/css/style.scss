@@ -403,10 +403,15 @@ a {
     max-width: 1600px;
     margin: 0 auto;
     padding: 0 40px;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     height: 100vh;
     justify-content: space-between;
     position: relative;
+}
+
+
+.site_container  > * {
+    flex: 1 100%;
 }
 
 .main_header {
@@ -732,6 +737,7 @@ a {
     display: none;
     position: relative;
     padding-left: 40px;
+    margin-top: 40px;
 
 
     &:before {
