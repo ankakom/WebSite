@@ -1,12 +1,4 @@
 
-const logo = document.querySelector("#logo");
-const projects = document.querySelector("#projects");
-
-const tl = new TimelineMax();
-
-tl.fromTo(logo, 0.5, {opacity:0, x: 60}, {opacity: 1, x: 0}, "-=0.5")
-  .fromTo(projects, 1, {height: "0%"}, {height: '80%', ease: Power2.easeInout});
-
 
 jQuery(document).ready(function($) {
 	$('.home_social__toggle').on('click',function(event) {
