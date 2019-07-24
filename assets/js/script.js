@@ -1,4 +1,16 @@
 
+const slider = document.querySelector('.slider');
+const headline = document.querySelector('.headline');
+const logo = document.querySelector('.logo');
+const codeblock = document.querySelector('.codeblock');
+
+
+const tl = new TimelineMax();
+
+tl.fromTo(slider, 1.5, {x:"-100%"}, {x: '0%', ease: Power2.easeInOut})
+  .fromTo(codeblock, 1.2, {x:"100%"}, {x: '0%', ease: Power2.easeInOut}, "-=1")
+  .fromTo(headline, 0.5, {opacity:0, x: 80}, {opacity: 1, x: 0}, "-=0.5")
+  .fromTo(logo, 0.5, {opacity:0, x: 30}, {opacity: 1, x: 0}, "-=1");
 
 jQuery(document).ready(function($) {
 	$('.home_social__toggle').on('click',function(event) {
@@ -84,5 +96,6 @@ jQuery(document).ready(function($) {
 	  	}
 	  },14000)
 });
+
 
 
